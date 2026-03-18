@@ -50,7 +50,7 @@ li {
 .manubar {
   display: none;
 }
-.herosection{
+.herosection {
   display: grid;
   grid-template-columns: auto repeat(1fr, 150px);
 }
@@ -82,8 +82,16 @@ li {
   padding: 10px 10px;
   margin: 20px;
 }
+.shopingimg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: left;
+  align-items: center;
+}
 .cardSection {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -94,11 +102,12 @@ li {
   border-radius: 5px;
   margin: 20px;
   box-shadow: 1px 1px 15px rgb(129, 129, 129);
+  
 }
 .imagediv img {
   width: 15vw;
   height: 30vh;
-  padding: 20px 10px;
+  padding: 10px 5px;
   margin: 20px;
 }
 .cardstext {
@@ -115,11 +124,13 @@ li {
   color: #0066ff;
 }
 .cardscards {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 .cardimage {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: left;
   background-color: #000000;
   padding: 20px;
@@ -153,22 +164,23 @@ li {
   margin: 10px;
 }
 .imagelogolast {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   align-items: center;
-  padding: 20px;
+  gap: 10px;
+  padding: 10px;
 }
 .imagelogolast img {
   width: 5vw;
   height: 10vh;
   padding: 20px 10px;
   border: 1px rgb(255, 255, 255) solid;
-  margin: 20px;
+  margin: 15px;
   background-color: #d8d6d6;
   border-radius: 5px;
 }
 .imagelogolast p {
-  font-size: 20px;
+  font-size: 15px;
   color: #000000;
 }
 footer {
@@ -178,8 +190,9 @@ footer {
 }
 
 .footerSection {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 .footerSectionColum h1 {
   font-size: 20px;
@@ -216,22 +229,73 @@ footer {
   .navlinks {
     display: none;
   }
+  .icon-links {
+    display: none;
+  }
   .hambergar {
     display: block;
+    color: #000;
   }
   .manubar {
     display: block;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    padding: 10px;
-    border-radius: 5px;
+    color: #000;
   }
   .manubar a {
     display: block;
     padding: 10px;
     color: #000000;
+  }
+  .sectionimage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sectionimage img {
+    width: 100%;
+    height: 80%;
+    padding: 20px 10px;
+    border: 1px rgb(255, 255, 255) solid;
+    margin: 20px;
+    background-color: #d8d6d6;
+    border-radius: 5px;
+  }
+  .imagetext {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .imagetext {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 20px;
+  }
+  .cardSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imagediv {
+    border: 1px black solid;
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 1px 1px 15px rgb(129, 129, 129);
+  }
+  .imagediv img {
+    width: 100%;
+    height: 80%;
+    padding: 10px 5px;
+    margin: 20px;
+    background-position: center;
+    background-size: cover;
+  }
+  .cardscards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
