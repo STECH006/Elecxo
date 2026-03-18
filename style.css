@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #ffffff;
+}
+.headerContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+.logo {
+  color: #0066ff;
+  padding: 20px;
+}
+.logo span {
+  color: #000000;
+}
+.navlinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+}
+.navlinks :hover {
+  color: #0066ff;
+}
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+}
+.icon-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+.icon-links :hover {
+  cursor: pointer;
+}
+.hamberger {
+  display: none;
+}
+.manubar {
+  display: none;
+}
+/* ---------------------------------------- */
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.heroSection img {
+  width: 200%;
+  height: 80vh;
+}
+/* ----------------------------------------- */
+.SectionContainer {
+  align-items: center;
+}
+.Sectionh2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+}
+.SectionImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5%;
+}
+.SectionImg img {
+  gap: 20px;
+  background-color: #00000021;
+  width: 80%;
+  padding: 20px;
+}
+.cardSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imagediv {
+  border: 1px black solid;
+  width: 18vw;
+  height: 50vh;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 1px 1px 15px rgb(129, 129, 129);
+}
+.imagediv img {
+  width: 15vw;
+  height: 30vh;
+  padding: 20px 10px;
+  margin: 20px;
+}
+.cardstext {
+  padding: 20px;
+  margin-top: -25px;
+}
+.imagediv p {
+  color: #646464;
+}
+.imagediv h4 {
+  font-size: 15px;
+}
+.imagediv h3 {
+  color: #0066ff;
+}
+
+@media (max-width: 765px) {
+  .headerContainer {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .navlinks {
+    flex-direction: row;
+    gap: 10px;
+    background-color: #201c1c69;
+    padding: 10px;
+    display: none;
+  }
+  .icon-links {
+    justify-content: center;
+    gap: 10px;
+    display: none;
+  }
+  .hamberger {
+    display: block;
+    font-size: 30px;
+  }
+  .heroSection img {
+    width: 200%;
+    height: 80%;
+  }
+  .SectionImg {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5%;
+  }
+  .cardSection {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
